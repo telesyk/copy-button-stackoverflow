@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Copy Button for Stackoverflow",
+  "version": "1.0",
+  "description": "Add copy button to elements with code on Stackverflow",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.stackoverflow.com/*"],
+      "js": ["main.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "img/icon-16.png",
+      "32": "img/icon-32.png"
+    }
+  },
+  "icons": {
+    "32": "img/icon-32.png",
+    "48": "img/icon-48.png"
+  }
+}
